@@ -33,7 +33,7 @@ const page = () => {
                             Gain insights into exam patterns and improve your problem-solving skills with our detailed video explanations.
                         </p>
                         <Link href="/corrections/exams">
-                            <Button className="w-full">Access Exam Corrections</Button>
+                            <Button className="w-full bg-blue-500 hover:bg-blue-400">Access Exam Corrections</Button>
                         </Link>
                     </CardContent>
                 </Card>
@@ -53,7 +53,7 @@ const page = () => {
                             Reinforce your understanding of key concepts with our comprehensive chapter-by-chapter video corrections.
                         </p>
                         <Link href="/corrections/textbooks">
-                            <Button className="w-full">Access Textbook Corrections</Button>
+                            <Button className="w-full bg-blue-500 hover:bg-blue-400">Access Textbook Corrections</Button>
                         </Link>
                     </CardContent>
                 </Card>

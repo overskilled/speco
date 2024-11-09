@@ -129,7 +129,7 @@ export default function LoginPage() {
                                 />
                             </div>
                         </div>
-                        <Button type="submit" className="w-full mt-6">
+                        <Button type="submit" className="w-full mt-6 bg-blue-500 hover:bg-blue-400">
                             {loading ? (
                                 <>
                                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -146,7 +146,7 @@ export default function LoginPage() {
                 <CardFooter className="flex flex-col items-center">
                     <p className="text-sm text-muted-foreground mt-2">
                         Don't have an account?{' '}
-                        <Link href="/register" className="text-primary hover:underline">
+                        <Link href="/register" className="text-blue-400 hover:underline ">
                             Register here
                         </Link>
                     </p>

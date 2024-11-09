@@ -1,8 +1,5 @@
+import Header from "./components/Header";
 
-import Header from "@/components/corrections/Header";
-import { Button } from "@/components/ui/button";
-import { ArrowBigRight, GraduationCap } from "lucide-react";
-import Link from "next/link";
 
 export const metadata = {
     title: 'Corrections - Video Page',
@@ -20,8 +17,8 @@ export default function CorrectionsLayout({ children }) {
                 {children}  {/* This renders the page content */}
             </main>
 
-            <footer className="bg-primary text-white p-4 text-center">
-                <p>© 2024 Corrections. All rights reserved.</p>
+            <footer className="bg-blue-500 text-white p-4 text-center">
+                <p>© 2024 Speco. All rights reserved.</p>
             </footer>
         </div>
     );

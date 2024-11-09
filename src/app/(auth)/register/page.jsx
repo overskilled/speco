@@ -237,7 +237,7 @@ export default function RegisterPage() {
                             </div>
                         )}
 
-                        <Button type="submit" className="w-full mt-6">
+                        <Button type="submit" className="w-full mt-6 bg-blue-500 hover:bg-blue-400">
                             {isLoading ? (
                                 <>
                                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -252,7 +252,7 @@ export default function RegisterPage() {
                 <CardFooter className="flex flex-col items-center">
                     <p className="text-sm text-muted-foreground mt-2">
                         Already have an account?{' '}
-                        <Link href="/login" className="text-primary hover:underline">
+                        <Link href="/login" className="text-blue-500 hover:underline ">
                             Login here
                         </Link>
                     </p>
