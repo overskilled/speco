@@ -1,45 +1,44 @@
-import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { Star } from 'lucide-react'
-import React from 'react'
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Star } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import React from 'react';
 
 const Testimonials = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="testimonials" className="py-20 bg-slate-50">
             <div className="container px-4 md:px-6">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
-                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">What Our Students Say</h2>
-                        <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                            Hear from students who have improved their grades with Speco
-                        </p>
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">{t('testimonials.A1')}</h2>
+                        <p className="max-w-[900px] text-muted-foreground md:text-xl">{t('testimonials.A2')}</p>
                     </div>
                 </div>
                 <div className="grid gap-6 pt-12 lg:grid-cols-3 lg:gap-12">
                     {[
                         {
-                            name: "Aisha N.",
-                            role: "GCE A Level Student",
-                            content: "Speco helped me understand complex Physics concepts. I improved my grade from a C to an A!",
+                            name: t('testimonials.B1.name'),
+                            role: t('testimonials.B1.role'),
+                            content: t('testimonials.B1.content'),
                         },
                         {
-                            name: "Jean-Pierre M.",
-                            role: "BAC Student",
-                            content: "The video explanations for Math problems are clear and easy to follow. It's like having a personal tutor.",
+                            name: t('testimonials.B2.name'),
+                            role: t('testimonials.B2.role'),
+                            content: t('testimonials.B2.content'),
                         },
                         {
-                            name: "Grace T.",
-                            role: "BEPC Student",
-                            content: "I love that I can access both English and French content. It really helps with my bilingual education.",
-                        }
+                            name: t('testimonials.B3.name'),
+                            role: t('testimonials.B3.role'),
+                            content: t('testimonials.B3.content'),
+                        },
                     ].map((testimonial, index) => (
                         <Card key={index} className="relative overflow-hidden">
                             <CardHeader>
                                 <div className="flex items-center gap-4">
-                                    <Star className="h-5 w-5 text-yellow-400" />
-                                    <Star className="h-5 w-5 text-yellow-400" />
-                                    <Star className="h-5 w-5 text-yellow-400" />
-                                    <Star className="h-5 w-5 text-yellow-400" />
-                                    <Star className="h-5 w-5 text-yellow-400" />
+                                    {[...Array(5)].map((_, i) => (
+                                        <Star key={i} className="h-5 w-5 text-yellow-400" />
+                                    ))}
                                 </div>
                             </CardHeader>
                             <CardContent>
@@ -52,7 +51,7 @@ const Testimonials = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Testimonials
+export default Testimonials;

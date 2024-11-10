@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from 'react'
 import { useParams } from 'next/navigation'
 import { Button } from "@/components/ui/button"
@@ -8,6 +6,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useCollectionData } from 'react-firebase-hooks/firestore'
 import { collection, query, where } from 'firebase/firestore'
 import { firestore } from '@/firebase/config'
+import { useTranslation } from 'react-i18next' // import useTranslation hook
 
 // Sample data with free sample videos
 const sampleData = {
@@ -31,6 +30,7 @@ const sampleData = {
 }
 
 export default function CorrectionVideoPage({ params }) {
+    const { t } = useTranslation()  // Using react-i18next's useTranslation hook
     const name = decodeURIComponent(params.id).replace(/[^\w\s-]/g, '')
     const type = params?.type ?? 'exam';
     const id = params?.id
@@ -62,7 +62,7 @@ export default function CorrectionVideoPage({ params }) {
             <div className="container mx-auto px-4 py-8">
                 <Card className="w-full max-w-3xl mx-auto">
                     <CardContent className="py-8">
-                        <p className="text-center text-lg">No videos available for this content.</p>
+                        <p className="text-center text-lg">{t('correction2.noVideos')}</p> {/* Translation for no videos */}
                     </CardContent>
                 </Card>
             </div>
@@ -75,9 +75,9 @@ export default function CorrectionVideoPage({ params }) {
 
             <Card className="w-full max-w-3xl mx-auto">
                 <CardHeader>
-                    <CardTitle className="text-xs text-gray-800"> <span className='text-md font-bold'>Chapitre :</span> {data.videos[currentVideoIndex]?.chapitre || "Video Chapter Not Available"}</CardTitle>
-                    <CardTitle>{data.videos[currentVideoIndex]?.title || "Video Title Not Available"}</CardTitle>
-                    <CardDescription>Video {currentVideoIndex + 1} of {data.videos.length}</CardDescription>
+                    <CardTitle className="text-xs text-gray-800"> <span className='text-md font-bold'>{t('correction2.videoChapter')} :</span> {data.videos[currentVideoIndex]?.chapitre || t('correction2.videoChapterNotAvailable')}</CardTitle>
+                    <CardTitle>{data.videos[currentVideoIndex]?.title || t('correction2.videoTitleNotAvailable')}</CardTitle>
+                    <CardDescription>{t('correction2.video')} {currentVideoIndex + 1} {t('correction2.of')} {data.videos.length}</CardDescription>
                 </CardHeader>
                 <CardContent>
                     <video
@@ -92,19 +92,19 @@ export default function CorrectionVideoPage({ params }) {
                         disabled={currentVideoIndex === 0}
                         variant="outline"
                     >
-                        <ChevronLeft className="mr-2 h-4 w-4" /> Previous
+                        <ChevronLeft className="mr-2 h-4 w-4" /> {t('correction2.previous')}
                     </Button>
                     <Button
                         onClick={handleNextVideo}
                         disabled={currentVideoIndex === data.videos.length - 1}
                     >
-                        Next <ChevronRight className="ml-2 h-4 w-4" />
+                        {t('correction2.next')} <ChevronRight className="ml-2 h-4 w-4" />
                     </Button>
                 </CardFooter>
             </Card>
 
             <div className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">All Videos</h2>
+                <h2 className="text-2xl font-semibold mb-4">{t('correction2.allVideos')}</h2>
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                     {data.videos.map((video, index) => (
                         <Button
@@ -115,7 +115,7 @@ export default function CorrectionVideoPage({ params }) {
                         >
                             <div>
                                 <p className="font-semibold">{video.title}</p>
-                                <p className="text-sm text-muted-foreground mt-1">Video {index + 1}</p>
+                                <p className="text-sm text-muted-foreground mt-1">{t('correction2.video')} {index + 1}</p>
                             </div>
                         </Button>
                     ))}

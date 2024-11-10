@@ -1,0 +1,257 @@
+{"banner": {
+    "A1": " Now Available in Cameroon",
+    "A2": "Master Your Exams with Expert Video Corrections",
+    "A3":"Comprehensive video solutions for past examination questions and textbook exercises.Supporting both Anglophone and Francophone education systems.",
+    "A4": " Start Learning Now",
+    "A5": " Watch Demo"
+  },
+  "features": {
+    "A1": "Everything You Need to Exce",
+    "A2":"Our platform provides comprehensive learning resources for both Anglophone and Francophone students.",
+    "B1": "Past Exam Corrections",
+    "B2": "Step-by-step video solutions for previous examination questions from BEPC to BAC and GCE O/A Levels.",
+    "B3": "Textbook Solutions",
+    "B4": "Detailed explanations for exercises from your curriculum textbooks, organized by chapter.",
+    "B5": "Expert Teachers",
+    "B6": "Learn from experienced educators who understand both education systems.",
+    "B7": "24/7 Access",
+    "B8": "Study anytime, anywhere with our on-demand video platform.",
+    "B9": "Bilingual Content",
+    "B10": "Access content in both English and French to support your learning.",
+    "B11": "Performance Tracking",
+    "B12": "Monitor your progress and identify areas for improvement."
+  
+  },
+  "howitworks": {
+    "A1": "How It Works",
+    "A2": "Get started with Speco in just a few simple steps",
+    "B1": "1. Sign Up",
+    "B2": "Create your account and choose a subscription plan that fits your needs.",
+    "B3": "2. Choose Your Content",
+    "B4": "Select from our library of past exam corrections or textbook solutions.",
+    "B5": "3. Start Learning",
+    "B6": "Watch expert video explanations and improve your understanding."
+  },
+  "stats":{
+    "A1": " Students",
+    "A2": "Active learners",
+    "A3":"Videos",
+    "A4": " Correction video",
+    "A5": "Subjects",
+    "A6": "Core subjects",
+    "A7": "Success Rate",
+    "A8": "Pass rate increase"
+  },
+
+  "testimonials": {
+    "A1": "What Our Students Say",
+    "A2": "Hear from students who have improved their grades with Speco",
+    "B1": {
+      "name": "Aisha N.",
+      "role": "GCE A Level Student",
+      "content": "Speco helped me understand complex Physics concepts. I improved my grade from a C to an A!"
+    },
+    "B2": {
+      "name": "Jean-Pierre M.",
+      "role": "BAC Student",
+      "content": "The video explanations for Math problems are clear and easy to follow. It's like having a personal tutor."
+    },
+    "B3": {
+      "name": "Grace T.",
+      "role": "BEPC Student",
+      "content": "I love that I can access both English and French content. It really helps with my bilingual education."
+    }
+  },
+
+  "pricing": {
+    "A1": "Simple, Transparent Pricing",
+    "A2": "Choose the plan that best fits your learning needs",
+    "A3":"/month",
+    "A4":"Get Started",
+    "B1":{
+        "title": "Basic",
+        "price": "Free",
+        "description": "Perfect for trying out our platform",
+        "features": [
+          "Access to sample videos",
+          "Basic study materials",
+          "Community support"
+        ]
+      },
+     "B2":{
+        "title": "Standard",
+        "price": "2,000 FCFA",
+        "description": "Most popular choice for students",
+        "features": [
+          "All Basic features",
+          "Full access to past exam corrections",
+          "Textbook solutions",
+          "Priority support"
+        ]
+      },
+      "B3":{
+        "title": "Premium",
+        "price": "5,000 FCFA",
+        "description": "Complete learning experience",
+        "features": [
+          "All Standard features",
+          "Live Q&A sessions",
+          "Personalized study plan",
+          "Mock exam preparation"
+        ]
+      }
+  },
+    "faq": {
+      "A1": "Frequently Asked Questions",
+      "A2": "Find answers to common questions about our platform",
+      "B1": {
+        "question": "Which education systems do you support?",
+        "answer": "We support both the Anglophone and Francophone education systems in Cameroon, covering all major examinations including GCE O/A Levels, BEPC, Probatoire, and BAC."
+      },
+      "B2": {
+        "question": "How do I access the video corrections?",
+        "answer": "Once you've created an account and subscribed to a plan, you can access all video corrections through our platform. Videos are organized by subject, exam type, and year."
+      },
+      "B3": {
+        "question": "Are the textbook solutions available offline?",
+        "answer": "Currently, our content is available online only. However, you can access it from any device with an internet connection."
+      },
+      "B4": {
+        "question": "Can I switch between plans?",
+        "answer": "Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle."
+      },
+      "B5": {
+        "question": "Do you offer group discounts for schools?",
+        "answer": "Yes, we offer special pricing for schools and educational institutions. Please contact our sales team for more information."
+      },
+      "B6": {
+        "question": "How often is new content added?",
+        "answer": "We regularly update our content library with new exam corrections and textbook solutions. We also add new features and improvements based on user feedback."
+      }
+    },
+    "calltoaction":{
+      "A1":"Ready to Boost Your Grades?",
+      "A2":" Join thousands of students who are already benefiting from EduSuccess",
+      "A3":"Get Started Now",
+      "A4":"Contact Sales"
+    },
+    "footer": {
+    "A1": " Speco",
+    "A2": "Empowering Cameroonian students with comprehensive exam preparation resources.",
+    "A3": " Platform",
+    "A4": " Features",
+    "A5": " Pricing",
+    "A6": " Testimonials",
+    "A7": "For Schools",
+    "A8": "Support",
+    "A9": "Help Center",
+    "A10": "Contact Us",
+    "A11": "FAQ",
+    "A12": "Community Forum",
+    "A13": "Legal",
+    "A14": "Privacy Policy",
+    "A15": "Terms of Service",
+    "A16": "Cookie Policy",
+    "A17": "© 2024 Speco. All rights reserved." 
+  },
+    "login": {
+      "title": "Login to Your Account",
+      "description": "Enter your email and password to access your learning materials",
+      "emailLabel": "Email",
+      "emailPlaceholder": "name@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "signInButton": "Sign In",
+      "loadingButton": "Please wait",
+      "errorMessage": "Please fill all fields",
+      "successMessage": "Log In Successful",
+      "notFoundMessage": "User data not found in the database.",
+      "registerPrompt": "Don't have an account?",
+      "registerLink": "Register here"
+    } ,
+    "header":{
+      "A1":"Speco",
+      "A2":"Log Out"
+    } ,
+    "correction-p":{
+     "A1":"Corrections Hub",
+     "A2":"Access comprehensive corrections for past exams and textbook exercises.",
+     "A3":"Past Exam Corrections",
+     "A4":"Review solutions for previous years' examination questions.",
+     "A5":"Gain insights into exam patterns and improve your problem-solving skills with our detailed video explanations.",
+     "A6":"Access Exam Corrections",
+     "A7":" Textbook Exercise Corrections",
+     "A8":"Step-by-step solutions for your textbook exercises.",
+     "A9":" Reinforce your understanding of key concepts with our comprehensive chapter-by-chapter video corrections.",
+     "A10":"Access Textbook Corrections"
+    },
+    "correction-l":{
+      "A1":"Corrections - Video Page",
+      "A2":"Watch and learn from video corrections.",
+      "A3":"© 2024 Speco. All rights reserved."
+    },
+    "correction1": {
+    "title": "Correction for {{title}}",
+    "contentNotFound": "Content Not Found",
+    "noVideos": "No videos available for this content.",
+    "chapter": "Chapter",
+    "chapterNotAvailable": "Video Chapter Not Available",
+    "videoTitleNotAvailable": "Video Title Not Available",
+    "videoCount": "Video {{current}} of {{total}}",
+    "previous": "Previous",
+    "next": "Next",
+    "allVideos": "All Videos",
+    "videoCountLabel": "Video {{index}}"
+  },
+    "exam": {
+      "A1": "Past Exam Corrections",
+      "francophone": "Francophone",
+      "anglophone": "Anglophone",
+      "selectSubject": "Select a subject to view available corrections",
+      "subjects": {
+        "Mathematics": "Mathematics",
+        "Physics": "Physics",
+        "Chemistry": "Chemistry",
+        "Biology": "Biology",
+        "French": "French",
+        "English": "English",
+        "History": "History",
+        "Geography": "Geography",
+        "Computer Science": "Computer Science",
+        "Literature": "Literature"
+      }
+    },
+    "correction2": {
+    "content_not_found": "Content Not Found",
+    "no_videos_available": "No videos available for this content.",
+    "chapter": "Chapitre",
+    "video_chapter_not_available": "Video Chapter Not Available",
+    "video_title_not_available": "Video Title Not Available",
+    "video": "Video",
+    "of": "of",
+    "previous": "Previous",
+    "next": "Next",
+    "all_videos": "All Videos"
+  },
+  "textbook":{
+    "A1":"Textbook Exercise Corrections",
+    "A2":"Find Your Textbook",
+    "A3":"Select a subject and search for your textbook",
+    "placeholer1":"Select subject",
+    "placeholer2":"Search for a textbook...",
+    "A4":"Textbook exercise corrections"
+  },
+  "register": {
+    "title": "Create an Account",
+    "description": "Enter your details to register for our learning platform",
+    "full_name": "Full Name",
+    "email": "Email",
+    "password": "Password",
+    "section": "Section",
+    "class": "Class",
+    "specialty": "Specialty",
+    "register_button": "Register",
+    "loading": "Please wait",
+    "already_have_account": "Already have an account? Login here"
+  }
+}
