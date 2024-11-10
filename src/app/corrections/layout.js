@@ -13,8 +13,8 @@ export default function CorrectionsLayout({ children }) {
         <div className="corrections-layout">
             <Header />
 
-            <main className="p-8 bg-gray-50 min-h-screen">
-                {children}  {/* This renders the page content */}
+            <main className="container mx-auto px-6 py-8">
+                {children}
             </main>
 
             <footer className="bg-blue-500 text-white p-4 text-center">
