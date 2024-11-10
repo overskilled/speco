@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -21,6 +23,8 @@ import Pricing from "./components/Pricing"
 import FAQ from "./components/FAQ"
 import CallToAction from "./components/CallToAction"
 import Footer from "./components/Footer"
+import './utils/i18n';
+import { useTranslation } from 'react-i18next';
 
 export default function LandingPage() {
   return (

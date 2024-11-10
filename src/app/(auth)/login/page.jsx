@@ -11,11 +11,13 @@ import { GraduationCap, Loader2 } from 'lucide-react'
 import { useAuthState, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { auth, firestore } from '@/firebase/config'
 import { doc, getDoc } from 'firebase/firestore'
-import { toast, ToastContainer } from 'react-toastify'  // Import toast and ToastContainer
-import 'react-toastify/dist/ReactToastify.css'          // Import CSS for toastify
+import { toast, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import { useTranslation } from 'react-i18next'
 
 export default function LoginPage() {
     const router = useRouter();
+    const { t } = useTranslation();
     const [errors, setErrors] = useState(null);
     const [formData, setFormData] = useState({
         email: "",
@@ -30,7 +32,6 @@ export default function LoginPage() {
     ] = useSignInWithEmailAndPassword(auth);
     const [authUser, authLoading] = useAuthState(auth);
 
-    // Handle input change for form fields
     const handleInputChange = (e) => {
         setFormData({
             ...formData,
@@ -39,35 +40,33 @@ export default function LoginPage() {
     };
 
     useEffect(() => {
-        // If the user is already logged in, redirect to dashboard
         if (!authLoading && authUser) {
             router.push('/corrections');
         }
     }, [authUser, authLoading, router]);
 
     useEffect(() => {
-        // Once a new user is created, redirect to dashboard
         if (user) {
             router.push('/corrections');
         }
     }, [user, router]);
 
     const handleSubmit = async (e) => {
-        e.preventDefault(); // Prevent the form from refreshing the page
-        setErrors(null);    // Reset errors before submission
+        e.preventDefault();
+        setErrors(null);
     
         if (!formData.email || !formData.password) {
-            setErrors('Please fill all fields');
-            return;  // Prevent form submission if fields are missing
+            setErrors(t('login.errorMessage'));
+            return;
         }
     
         try {
             const userInfo = await signInWithEmailAndPassword(formData.email, formData.password);
-            toast.success("Log In Successful");
+            toast.success(t("login.successMessage"));
     
             if (!userInfo) {
-                setErrors("An error occurred while logging in.");
-                return;  // Prevent further execution if sign-in fails
+                setErrors(t("login.notFoundMessage"));
+                return;
             }
     
             const docRef = doc(firestore, "users", userInfo.user.uid);
@@ -75,10 +74,9 @@ export default function LoginPage() {
     
             if (docSnap.exists()) {
                 localStorage.setItem("user-info", JSON.stringify(docSnap.data()));
-    
             } else {
-                setErrors("User data not found in the database.");
-                toast.error("User data not found.");
+                setErrors(t("login.notFoundMessage"));
+                toast.error(t("login.notFoundMessage"));
             }
     
         } catch (error) {
@@ -87,30 +85,29 @@ export default function LoginPage() {
             console.log("Error:", error.message);
         }
     };
-    
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
-            <ToastContainer /> {/* Toast container to show notifications */}
+            <ToastContainer />
             <Card className="w-full max-w-md">
                 <CardHeader className="space-y-1">
                     <div className="flex items-center justify-center mb-4">
                         <GraduationCap className="h-12 w-12 text-primary" />
                     </div>
-                    <CardTitle className="text-2xl text-center">Login to Your Account</CardTitle>
+                    <CardTitle className="text-2xl text-center">{t('login.title')}</CardTitle>
                     <CardDescription className="text-center">
-                        Enter your email and password to access your learning materials
+                        {t('login.description')}
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
                     <form onSubmit={handleSubmit}>
                         <div className="space-y-4">
                             <div className="space-y-2">
-                                <Label htmlFor="email">Email</Label>
+                                <Label htmlFor="email">{t('login.emailLabel')}</Label>
                                 <Input
                                     id="email"
                                     type="email"
-                                    placeholder="name@example.com"
+                                    placeholder={t('login.emailPlaceholder')}
                                     required
                                     value={formData.email}
                                     autoCorrect="off" spellCheck="false" autoComplete="off"
@@ -118,11 +115,11 @@ export default function LoginPage() {
                                 />
                             </div>
                             <div className="space-y-2">
-                                <Label htmlFor="password">Password</Label>
+                                <Label htmlFor="password">{t('login.passwordLabel')}</Label>
                                 <Input
                                     id="password"
                                     type="password"
-                                    placeholder="Enter your password"
+                                    placeholder={t('login.passwordPlaceholder')}
                                     required
                                     value={formData.password}
                                     onChange={handleInputChange}
@@ -133,21 +130,20 @@ export default function LoginPage() {
                             {loading ? (
                                 <>
                                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                                    Please wait
+                                    {t('login.loadingButton')}
                                 </>
                             ) : (
-                                <>Sign In</>
+                                <>{t('login.signInButton')}</>
                             )}
                         </Button>
-                        {/* Display error messages */}
                         {errors && <p className="text-red-600 text-sm mt-2">{errors}</p>}
                     </form>
                 </CardContent>
                 <CardFooter className="flex flex-col items-center">
                     <p className="text-sm text-muted-foreground mt-2">
-                        Don't have an account?{' '}
+                        {t('login.registerPrompt')}{' '}
                         <Link href="/register" className="text-blue-400 hover:underline ">
-                            Register here
+                            {t('login.registerLink')}
                         </Link>
                     </p>
                 </CardFooter>

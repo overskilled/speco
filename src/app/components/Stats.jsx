@@ -1,17 +1,39 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { BookOpen, CheckCircle, Users, Video } from 'lucide-react'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Stats = () => {
+    const { t } = useTranslation();
     return (
         <section className="py-20">
             <div className="container px-4 md:px-6">
                 <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
                     {[
-                        { title: 'Students', value: '1,500+', description: 'Active learners', icon: Users },
-                        { title: 'Videos', value: '500+', description: 'Correction videos', icon: Video },
-                        { title: 'Subjects', value: '15+', description: 'Core subjects', icon: BookOpen },
-                        { title: 'Success Rate', value: '90%', description: 'Pass rate increase', icon: CheckCircle },
+                        {
+                            title: t('stats.A1'),
+                            value: '1,500+',
+                            description: t('stats.A2'),
+                            icon: Users
+                        },
+                        {
+                            title: t('stats.A3'),
+                            value: '500+',
+                            description: t('stats.A4'),
+                            icon: Video
+                        },
+                        {
+                            title: t('stats.A5'),
+                            value: '15+',
+                            description: t('stats.A6'),
+                            icon: BookOpen
+                        },
+                        {
+                            title: t('stats.A7'),
+                            value: '90%',
+                            description: t('stats.A8'),
+                            icon: CheckCircle
+                        },
                     ].map((stat, idx) => <StatCard key={idx} {...stat} />)}
                 </div>
             </div>

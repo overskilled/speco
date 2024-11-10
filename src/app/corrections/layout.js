@@ -1,9 +1,12 @@
+import { useTranslation } from "react-i18next";
 import Header from "./components/Header";
+
+const { t } = useTranslation();
 
 
 export const metadata = {
-    title: 'Corrections - Video Page',
-    description: 'Watch and learn from video corrections.',
+    title: t('correction-l.A1'),
+    description: t('correction-l.A2'),
 };
 
 
@@ -18,7 +21,7 @@ export default function CorrectionsLayout({ children }) {
             </main>
 
             <footer className="bg-blue-500 text-white p-4 text-center">
-                <p>© 2024 Speco. All rights reserved.</p>
+                <p>{t('correction-l.A3')}</p>
             </footer>
         </div>
     );

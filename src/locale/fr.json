@@ -1,0 +1,256 @@
+{
+    "banner": {
+      "A1": "Désormais disponible au Cameroun",
+      "A2": "Maîtrisez vos examens grâce aux corrections vidéo par des experts",
+      "A3": "Solutions vidéo complètes pour les questions d'examens passés et les exercices de manuels scolaires. Compatible avec les systèmes éducatifs anglophone et francophone.",
+      "A4": "Commencez à apprendre maintenant",
+      "A5": "Voir la démo"
+    },
+    "features": {
+      "A1": "Tout ce dont vous avez besoin pour réussir",
+      "A2": "Notre plateforme propose des ressources d'apprentissage complètes pour les étudiants anglophones et francophones.",
+      "B1": "Corrections d'examens passés",
+      "B2": "Solutions vidéo détaillées pour les questions d'examens, du BEPC au BAC et du GCE O/A Levels.",
+      "B3": "Solutions de manuels scolaires",
+      "B4": "Explications détaillées des exercices de vos manuels scolaires, organisées par chapitre.",
+      "B5": "Enseignants qualifiés",
+      "B6": "Apprenez avec des enseignants expérimentés qui maîtrisent les deux systèmes éducatifs.",
+      "B7": "Accès 24/7",
+      "B8": "Étudiez à tout moment et n'importe où avec notre plateforme vidéo à la demande.",
+      "B9": "Contenu bilingue",
+      "B10": "Accédez au contenu en anglais et en français pour faciliter votre apprentissage.",
+      "B11": "Suivi de performance",
+      "B12": "Suivez vos progrès et identifiez les domaines à améliorer."
+    },
+    "howitworks": {
+      "A1": "Comment ça fonctionne",
+      "A2": "Commencez avec Speco en quelques étapes simples",
+      "B1": "1. Inscrivez-vous",
+      "B2": "Créez votre compte et choisissez un plan adapté à vos besoins.",
+      "B3": "2. Choisissez votre contenu",
+      "B4": "Sélectionnez parmi notre bibliothèque de corrections d'examens passés ou de solutions de manuels.",
+      "B5": "3. Commencez à apprendre",
+      "B6": "Regardez des vidéos explicatives d'experts pour approfondir votre compréhension."
+    },
+    "stats": {
+      "A1": "Étudiants",
+      "A2": "Apprenants actifs",
+      "A3": "Vidéos",
+      "A4": "Vidéos de correction",
+      "A5": "Sujets",
+      "A6": "Matières principales",
+      "A7": "Taux de réussite",
+      "A8": "Augmentation du taux de réussite"
+    },
+    "testimonials": {
+      "A1": "Ce que disent nos étudiants",
+      "A2": "Témoignages d'élèves qui ont amélioré leurs notes avec Speco",
+      "B1": {
+        "name": "Aisha N.",
+        "role": "Étudiante GCE A Level",
+        "content": "Speco m'a aidée à comprendre des concepts complexes en physique. J'ai amélioré ma note de C à A !"
+      },
+      "B2": {
+        "name": "Jean-Pierre M.",
+        "role": "Étudiant BAC",
+        "content": "Les explications vidéo des problèmes de mathématiques sont claires et faciles à suivre. C'est comme avoir un tuteur personnel."
+      },
+      "B3": {
+        "name": "Grace T.",
+        "role": "Étudiante BEPC",
+        "content": "J'adore pouvoir accéder au contenu en anglais et en français. Cela m'aide vraiment dans mon éducation bilingue."
+      }
+    },
+    "pricing": {
+      "A1": "Des tarifs simples et transparents",
+      "A2": "Choisissez le plan qui répond le mieux à vos besoins",
+      "A3": "/mois",
+      "A4": "Commencez maintenant",
+      "B1": {
+        "title": "Basique",
+        "price": "Gratuit",
+        "description": "Idéal pour essayer notre plateforme",
+        "features": [
+          "Accès à des vidéos d'exemple",
+          "Matériel d'étude de base",
+          "Support communautaire"
+        ]
+      },
+      "B2": {
+        "title": "Standard",
+        "price": "2 000 FCFA",
+        "description": "Le choix le plus populaire pour les étudiants",
+        "features": [
+          "Toutes les fonctionnalités du plan Basique",
+          "Accès complet aux corrections d'examens",
+          "Solutions de manuels scolaires",
+          "Support prioritaire"
+        ]
+      },
+      "B3": {
+        "title": "Premium",
+        "price": "5 000 FCFA",
+        "description": "Expérience d'apprentissage complète",
+        "features": [
+          "Toutes les fonctionnalités du plan Standard",
+          "Sessions de questions/réponses en direct",
+          "Plan d'étude personnalisé",
+          "Préparation aux examens blancs"
+        ]
+      }
+    },
+    "faq": {
+      "A1": "Questions fréquemment posées",
+      "A2": "Trouvez les réponses aux questions courantes sur notre plateforme",
+      "B1": {
+        "question": "Quels systèmes éducatifs soutenez-vous ?",
+        "answer": "Nous soutenons les systèmes éducatifs anglophone et francophone au Cameroun, couvrant tous les examens majeurs, y compris le GCE O/A Levels, le BEPC, le Probatoire et le BAC."
+      },
+      "B2": {
+        "question": "Comment accéder aux corrections vidéo ?",
+        "answer": "Une fois votre compte créé et votre abonnement activé, vous pouvez accéder à toutes les corrections vidéo via notre plateforme. Les vidéos sont classées par matière, type d'examen et année."
+      },
+      "B3": {
+        "question": "Les solutions de manuels sont-elles disponibles hors ligne ?",
+        "answer": "Actuellement, notre contenu est uniquement disponible en ligne. Cependant, vous pouvez y accéder depuis tout appareil connecté à Internet."
+      },
+      "B4": {
+        "question": "Puis-je changer de plan ?",
+        "answer": "Oui, vous pouvez modifier votre plan à tout moment. Les changements seront pris en compte lors du prochain cycle de facturation."
+      },
+      "B5": {
+        "question": "Offrez-vous des réductions pour les écoles ?",
+        "answer": "Oui, nous proposons des tarifs spéciaux pour les écoles et institutions éducatives. Veuillez contacter notre équipe commerciale pour plus d'informations."
+      },
+      "B6": {
+        "question": "À quelle fréquence du nouveau contenu est-il ajouté ?",
+        "answer": "Nous mettons régulièrement à jour notre bibliothèque avec de nouvelles corrections d'examens et des solutions de manuels. Nous ajoutons également de nouvelles fonctionnalités en fonction des retours d'utilisateurs."
+      }
+    },
+    "calltoaction": {
+      "A1": "Prêt à améliorer vos notes ?",
+      "A2": "Rejoignez des milliers d'élèves qui bénéficient déjà d'EduSuccess",
+      "A3": "Commencez dès maintenant",
+      "A4": "Contactez les ventes"
+    },
+    "footer": {
+      "A1": "Speco",
+      "A2": "Donner aux étudiants camerounais les ressources nécessaires pour réussir leurs examens.",
+      "A3": "Plateforme",
+      "A4": "Fonctionnalités",
+      "A5": "Tarifs",
+      "A6": "Témoignages",
+      "A7": "Pour les écoles",
+      "A8": "Support",
+      "A9": "Centre d'aide",
+      "A10": "Contactez-nous",
+      "A11": "FAQ",
+      "A12": "Forum communautaire",
+      "A13": "Légal",
+      "A14": "Politique de confidentialité",
+      "A15": "Conditions d'utilisation",
+      "A16": "Politique de cookies",
+      "A17": "© 2024 Speco. Tous droits réservés."
+    },
+    "login": {
+    "title": "Connectez-vous à votre compte",
+    "description": "Saisissez votre email et votre mot de passe pour accéder à vos ressources d'apprentissage",
+    "emailLabel": "Email",
+    "emailPlaceholder": "nom@example.com",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "Saisissez votre mot de passe",
+    "signInButton": "Se connecter",
+    "loadingButton": "Veuillez patienter",
+    "errorMessage": "Veuillez remplir tous les champs",
+    "successMessage": "Connexion réussie",
+    "notFoundMessage": "Données utilisateur introuvables dans la base de données.",
+    "registerPrompt": "Vous n'avez pas de compte?",
+    "registerLink": "Inscrivez-vous ici"
+},
+"header": {
+    "A1": "Speco",
+    "A2": "Se déconnecter"
+},
+"correction-p": {
+    "A1": "Centre de corrections",
+    "A2": "Accédez à des corrections complètes pour les examens passés et les exercices de manuels.",
+    "A3": "Corrections d'examens passés",
+    "A4": "Revoyez les solutions des questions d'examen des années précédentes.",
+    "A5": "Obtenez des informations sur les modèles d'examen et améliorez vos compétences en résolution de problèmes grâce à nos explications vidéo détaillées.",
+    "A6": "Accédez aux corrections d'examens",
+    "A7": "Corrections d'exercices de manuels",
+    "A8": "Solutions étape par étape pour vos exercices de manuels.",
+    "A9": "Renforcez votre compréhension des concepts clés avec nos corrections vidéo complètes, chapitre par chapitre.",
+    "A10": "Accédez aux corrections de manuels"
+},
+"correction-l": {
+    "A1": "Corrections - Page vidéo",
+    "A2": "Regardez et apprenez des corrections vidéo.",
+    "A3": "© 2024 Speco. Tous droits réservés."
+},
+"correction1": {
+    "title": "Correction pour {{title}}",
+    "contentNotFound": "Contenu introuvable",
+    "noVideos": "Aucune vidéo disponible pour ce contenu.",
+    "chapter": "Chapitre",
+    "chapterNotAvailable": "Chapitre de la vidéo non disponible",
+    "videoTitleNotAvailable": "Titre de la vidéo non disponible",
+    "videoCount": "Vidéo {{current}} sur {{total}}",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "allVideos": "Toutes les vidéos",
+    "videoCountLabel": "Vidéo {{index}}"
+  },
+  "exam": {
+    "A1": "Corrections des examens passés",
+    "francophone": "Francophone",
+    "anglophone": "Anglophone",
+    "selectSubject": "Sélectionnez une matière pour voir les corrections disponibles",
+    "subjects": {
+        "Mathematics": "Mathématiques",
+        "Physics": "Physique",
+        "Chemistry": "Chimie",
+        "Biology": "Biologie",
+        "French": "Français",
+        "English": "Anglais",
+        "History": "Histoire",
+        "Geography": "Géographie",
+        "Computer Science": "Informatique",
+        "Literature": "Littérature"
+    }
+},
+"correction2": {
+    "content_not_found": "Contenu non trouvé",
+    "no_videos_available": "Aucune vidéo disponible pour ce contenu.",
+    "chapter": "Chapitre",
+    "video_chapter_not_available": "Chapitre vidéo non disponible",
+    "video_title_not_available": "Titre de la vidéo non disponible",
+    "video": "Vidéo",
+    "of": "de",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "all_videos": "Toutes les vidéos"
+},
+"textbook": {
+    "A1": "Corrections des exercices de manuels",
+    "A2": "Trouvez votre manuel",
+    "A3": "Sélectionnez une matière et recherchez votre manuel",
+    "placeholer1": "Sélectionner la matière",
+    "placeholer2": "Rechercher un manuel...",
+    "A4": "Corrections des exercices de manuels"
+},
+"register": {
+    "title": "Créer un compte",
+    "description": "Entrez vos informations pour vous inscrire à notre plateforme d'apprentissage",
+    "full_name": "Nom complet",
+    "email": "Email",
+    "password": "Mot de passe",
+    "section": "Section",
+    "class": "Classe",
+    "specialty": "Spécialité",
+    "register_button": "S'inscrire",
+    "loading": "Veuillez patienter",
+    "already_have_account": "Vous avez déjà un compte ? Connectez-vous ici"
+  }
+  }
+  

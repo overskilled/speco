@@ -10,6 +10,8 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { firestore } from '@/firebase/config';
 import { collection, query, where } from 'firebase/firestore';
 import { Skeleton } from "@/components/ui/skeleton"
+import { useTranslation } from "react-i18next";
+
 
 // // Define subjects as a string array
 // const subjects = [
@@ -21,6 +23,8 @@ const Page = () => {
     // Use state to manage selected subject and search term
     const [selectedSubject, setSelectedSubject] = useState('')
     const [searchTerm, setSearchTerm] = useState('')
+    const { t } = useTranslation();
+
 
     // Fetch subjects from Firestore
     const [subjects, subjectsLoading, subjectsError] = useCollectionData(
@@ -66,11 +70,11 @@ const Page = () => {
 
     return (
         <div className="container mx-auto px-4 py-8">
-            <h1 className="text-3xl font-bold mb-6 text-center">Textbook Exercise Corrections</h1>
+            <h1 className="text-3xl font-bold mb-6 text-center">{t('textbook.A1') }</h1>
             <Card className="mb-8">
                 <CardHeader>
-                    <CardTitle>Find Your Textbook</CardTitle>
-                    <CardDescription>Select a subject and search for your textbook</CardDescription>
+                    <CardTitle>{t('textbook.A2') }</CardTitle>
+                    <CardDescription>{t('textbook.A3') }k</CardDescription>
                 </CardHeader>
                 <CardContent>
                     <div className="flex flex-col md:flex-row gap-4">
@@ -113,7 +117,7 @@ const Page = () => {
                         <Card key={subject.id}>
                             <CardHeader>
                                 <CardTitle>{subject.name}</CardTitle>
-                                <CardDescription>Textbook exercise corrections</CardDescription>
+                                <CardDescription>{t('textbook.A4') }</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <ul className="space-y-2">

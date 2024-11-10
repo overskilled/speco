@@ -1,51 +1,54 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { BookOpen, Clock, Globe, GraduationCap, Video, Zap } from 'lucide-react'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Features = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="features" className="py-20 bg-slate-50">
             <div className="container px-4 md:px-6">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
                         <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                            Everything You Need to Excel
+                        {t('features.A1')}
                         </h2>
                         <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                            Our platform provides comprehensive learning resources for both Anglophone and Francophone students.
+                            {t('features.A2')}
                         </p>
                     </div>
                 </div>
                 <div className="grid gap-6 pt-12 lg:grid-cols-3 lg:gap-12">
                     {[
                         {
-                            title: "Past Exam Corrections",
-                            description: "Step-by-step video solutions for previous examination questions from BEPC to BAC and GCE O/A Levels.",
+                            title: t('features.B1'),
+                            description: t('features.B2'),
                             icon: Video
                         },
                         {
-                            title: "Textbook Solutions",
-                            description: "Detailed explanations for exercises from your curriculum textbooks, organized by chapter.",
+                            title: t('features.B3'),
+                            description: t('features.B4'),
                             icon: BookOpen
                         },
                         {
-                            title: "Expert Teachers",
-                            description: "Learn from experienced educators who understand both education systems.",
+                            title: t('features.B5'),
+                            description: t('features.B6'),
                             icon: GraduationCap
                         },
                         {
-                            title: "24/7 Access",
-                            description: "Study anytime, anywhere with our on-demand video platform.",
+                            title: t('features.B7'),
+                            description: t('features.B8'),
                             icon: Clock
                         },
                         {
-                            title: "Bilingual Content",
-                            description: "Access content in both English and French to support your learning.",
+                            title: t('features.B9'),
+                            description: t('features.B10'),
                             icon: Globe
                         },
                         {
-                            title: "Performance Tracking",
-                            description: "Monitor your progress and identify areas for improvement.",
+                            title: t('features.B11'),
+                            description:t('features.B12'),
                             icon: Zap
                         }
                     ].map((feature, index) => (
