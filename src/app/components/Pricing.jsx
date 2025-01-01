@@ -1,9 +1,67 @@
+"use client"
+
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import React from 'react'
 
 const Pricing = () => {
+
+    const DepositRequestBuild = () => {
+        const body = {
+            depositId: "AA97B177-9383-4934-8543-0F91A7A02838",
+            amount: "15",
+            currency: "XAF",
+            country: "CMR",
+            correspondent: "MTN_MOMO_CMR",
+            payer: {
+                type: "MSISDN",
+                address: {
+                    value: "237680462509"
+                }
+            },
+            customerTimestamp: "2020-02-21T17:32:28Z",
+            statementDescription: "Note of 4 to 22 chars",
+            preAuthorisationCode: "string",
+            metadata: [
+                {
+                    fieldName: "orderId",
+                    fieldValue: "ORD-123456789"
+                },
+                {
+                    fieldName: "customerId",
+                    fieldValue: "customer@email.com",
+                    isPII: true
+                }
+            ]
+        };
+    
+        const options = {
+            method: 'POST',
+            headers: {
+                Authorization: "Bearer eyJraWQiOiIxIiwiYWxnIjoiRVMyNTYifQ.eyJ0dCI6IkFBVCIsInN1YiI6IjgxOSIsImV4cCI6MjA1MTAxMzAxMiwiaWF0IjoxNzM1NDgwMjEyLCJwbSI6IkRBRixQQUYiLCJqdGkiOiI2OGM2MTIwMi0wZmI3LTQ5NjItOWQ0Ni05ZTI4OWJkMTRiYjMifQ.MZmI6GmLbS4F8Ah_0haUlA220lWmAin_BJek2tF19AJ9_zSJeBgr-WW2saDjjv_oRjF5S00Zk6SGwhb4R30rKA",
+                'Content-Type': 'application/json',
+                Connection: "Keep-alive",
+                Accept: "*/*",
+                "Accept-Encoding": "gzip, deflate, br"
+            },
+            body: JSON.stringify(body) // Properly stringify the body
+        };
+    
+        fetch('/api/deposits', options)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json(); // Parse the response JSON
+            })
+            .then(response => console.log("Pawapay responded with", response))
+            .catch(err => console.error("An error occurred: ", err));
+    };
+    
+
+
+
     return (
         <section id="pricing" className="py-20">
             <div className="container px-4 md:px-6">
@@ -56,10 +114,16 @@ const Pricing = () => {
                                 </ul>
                             </CardContent>
                             <CardFooter>
-                                <Button  variant={index === 1 ? "default" : "outline"} className={index === 1 ? "w-full bg-blue-500 hover:bg-blue-400" : "w-full"}>
-                                    Get Started <ArrowRight className="ml-2 h-4 w-4" />
+                                <Button
+                                    variant={index === 1 ? "default" : "outline"}
+                                    className={index === 1 ? "w-full bg-blue-500 hover:bg-blue-400" : "w-full"}
+                                    onClick={() => DepositRequestBuild()}
+                                >
+                                    Get Started
+                                    <ArrowRight className="ml-2 h-4 w-4" />
                                 </Button>
                             </CardFooter>
+
                         </Card>
                     ))}
                 </div>
